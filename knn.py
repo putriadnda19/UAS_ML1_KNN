@@ -19,11 +19,10 @@ def evaluate_model(model, X_test, y_test):
     return accuracy
 
 def main():
-    st.title("Aplikasi KNN dengan Streamlit")
+    st.title("Estimasi Pasien Yang Menderita Kanker Paru-Paru")
 
     # Tambahkan elemen-elemen UI
-    st.sidebar.header("Pengaturan Model")
-    k_value = st.sidebar.slider("Jumlah Tetangga (k)", 1, 10, 3)
+    AGE = st.slider("Umur pasien", 1, 80)
 
     # Muat dataset (ganti dengan dataset Anda)
     # Misalnya, Anda dapat menggunakan dataset iris untuk contoh
