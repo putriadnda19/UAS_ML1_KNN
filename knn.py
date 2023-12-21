@@ -41,8 +41,8 @@ def main():
     accuracy = evaluate_model(model, X_test, y_test)
 
     # Tampilkan hasil evaluasi
-    st.sidebar.subheader("Hasil Evaluasi Model")
-    st.sidebar.write(f"Akurasi: {accuracy:.2%}")
+    st.subheader("Hasil Evaluasi Model")
+    st.write(f"Akurasi: {accuracy:.2%}")
 
 if __name__ == "__main__":
     main()
