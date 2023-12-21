@@ -5,6 +5,11 @@ model = pickle.load(open('knn-paru-paru.sav', 'rb'))
 
 st.title('Estimasi Pasien Yang Menderita Kanker Paru-Paru')
 
+SMOKING = st.selectbox(
+    'Apakah pasien merokok?',
+    ('YES', 'NO'))
+
+st.write('Kamu memilih:', SMOKING)
 AGE = st.number_input('Input umur pasien')
 SMOKING = st.number_input('Apakah pasien merokok?')
 YELLOW_FINGERS = st.number_input('Apakah pasien jari pasien kuning?')
