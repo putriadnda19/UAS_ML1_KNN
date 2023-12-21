@@ -23,6 +23,35 @@ def main():
 
     # Tambahkan elemen-elemen UI
     k_value = st.slider("Umur pasien", 1, 80)
+    k_value = st.radio('**Apakah pasien merokok?**', ["1", "2"])
+    st.write('**Note**: 1 = NO, 2 = YES')
+    
+    k_value = st.radio('**Apakah pasien jari pasien kuning?**', ["1", "2"])
+    st.write('**Note**: 1 = NO, 2 = YES')
+    
+    k_value = st.radio('**Apakah pasien mempunyai kecemasan berlebih?**', ["1", "2"])
+    st.write('**Note**: 1 = NO, 2 = YES')
+    
+    k_value = st.radio('**Apakah pasien mempunyai tekanan dari teman sebaya?**', ["1", "2"])
+    st.write('**Note**: 1 = NO, 2 = YES')
+    
+    k_value = st.radio('**Apakah pasien batuk-batuk?**', ["1", "2"])
+    st.write('**Note**: 1 = NO, 2 = YES')
+    
+    k_value = st.radio('**Apakah pasien sesak nafas?**', ["1", "2"])
+    st.write('**Note**: 1 = NO, 2 = YES')
+    
+    k_value = st.radio('**Apakah pasien kesulitan menelan?**', ["1", "2"])
+    st.write('**Note**: 1 = NO, 2 = YES')
+    
+    k_value = st.radio('**Apakah pasien nyeri dada?**', ["1", "2"])
+    st.write('**Note**: 1 = NO, 2 = YES')
+    
+    k_value = st.radio('**Apakah pasien mempunyai penyakit kronis?**', ["1", "2"])
+    st.write('**Note**: 1 = NO, 2 = YES')
+    
+    k_value = st.radio('**Apakah pasien mengi (Napas Berbunyi)?**', ["1", "2"])
+    st.write('**Note**: 1 = NO, 2 = YES')
 
     # Muat dataset (ganti dengan dataset Anda)
     # Misalnya, Anda dapat menggunakan dataset iris untuk contoh
