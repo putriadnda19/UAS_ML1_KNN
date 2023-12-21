@@ -8,7 +8,7 @@ st.title('Estimasi Pasien Yang Menderita Kanker Paru-Paru')
 AGE = st.slider('**Input umur pasien**', 1, 80)
 st.write('**Note**: 1 = NO, 2 = YES')
 
-SMOKING = st.slider('Apakah pasien merokok?', 1, 2)
+SMOKING = st.radio('Apakah pasien merokok?', 1, 2)
 YELLOW_FINGERS = st.slider('Apakah pasien jari pasien kuning?', 1, 2)
 ANXIETY = st.number_input('Apakah pasien mempunyai kecemasan berlebih?')
 PEER_PRESSURE = st.number_input('Apakah pasien mempunyai tekanan dari teman sebaya?')
