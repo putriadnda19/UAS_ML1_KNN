@@ -5,6 +5,8 @@ model = pickle.load(open('knn-paru-paru.sav', 'rb'))
 
 st.title('Estimasi Pasien Yang Menderita Kanker Paru-Paru')
 
+col1, col2 = st.columns(2)
+
 with col1 :
     AGE = st.number_input('Input umur pasien')
 
