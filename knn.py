@@ -22,7 +22,7 @@ def main():
     st.title("Estimasi Pasien Yang Menderita Kanker Paru-Paru")
 
     # Tambahkan elemen-elemen UI
-    AGE = st.slider("Umur pasien", 1, 80)
+    k_value = st.slider("Umur pasien", 1, 80)
 
     # Muat dataset (ganti dengan dataset Anda)
     # Misalnya, Anda dapat menggunakan dataset iris untuk contoh
