@@ -28,7 +28,7 @@ st.write('**Note**: 1 = NO, 2 = YES')
 SWALLOWING_DIFFICULTY = st.radio('**Apakah pasien kesulitan menelan?**', ["1", "2"])
 st.write('**Note**: 1 = NO, 2 = YES')
 
-CHEST_PAIN = st.radiot('**Apakah pasien nyeri dada?**', ["1", "2"])
+CHEST_PAIN = st.radio('**Apakah pasien nyeri dada?**', ["1", "2"])
 st.write('**Note**: 1 = NO, 2 = YES')
 
 CHRONIC_DISEASE = st.radio('**Apakah pasien mempunyai penyakit kronis?**', ["1", "2"])
