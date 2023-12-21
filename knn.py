@@ -10,7 +10,9 @@ AGE = st.number_input('**Input umur pasien**')
 SMOKING = st.slider('**Apakah pasien merokok?**', 1, 2)
 st.write('**Note**: 1 = NO, 2 = YES')
 
-YELLOW_FINGERS = st.radio('**Apakah pasien jari pasien kuning?**')
+YELLOW_FINGERS = st.radio('**Apakah pasien jari pasien kuning?**', ["1", "2"])
+st.write('**Note**: 1 = NO, 2 = YES')
+
 ANXIETY = st.number_input('**Apakah pasien mempunyai kecemasan berlebih?**')
 PEER_PRESSURE = st.number_input('**Apakah pasien mempunyai tekanan dari teman sebaya?**')
 COUGHING = st.number_input('**Apakah pasien batuk-batuk?**')
