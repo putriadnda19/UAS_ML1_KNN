@@ -5,7 +5,7 @@ model = pickle.load(open('knn-paru-paru.sav', 'rb'))
 
 st.title('Estimasi Pasien Yang Menderita Kanker Paru-Paru')
 
-AGE = st.sidebar.slider('**Input umur pasien**', 1, 80)
+AGE = st.slider('**Input umur pasien**', 1, 80)
 
 SMOKING = st.radio('**Apakah pasien merokok?**', ["1", "2"])
 st.write('**Note**: 1 = NO, 2 = YES')
