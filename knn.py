@@ -6,9 +6,10 @@ model = pickle.load(open('knn-paru-paru.sav', 'rb'))
 st.title('Estimasi Pasien Yang Menderita Kanker Paru-Paru')
 
 AGE = st.slider('**Input umur pasien**', 1, 80)
-st.write('**Note**: 1 = NO, 2 = YES')
 
 SMOKING = st.number_input('Apakah pasien merokok?')
+st.write('**Note**: 1 = NO, 2 = YES')
+
 YELLOW_FINGERS = st.number_input('Apakah pasien jari pasien kuning?')
 ANXIETY = st.number_input('Apakah pasien mempunyai kecemasan berlebih?')
 PEER_PRESSURE = st.number_input('Apakah pasien mempunyai tekanan dari teman sebaya?')
