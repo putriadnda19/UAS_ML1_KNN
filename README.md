@@ -249,6 +249,7 @@ plt.ylabel('Actual')
 plt.show()
 ```
 ![Alt text](output7.png)
+
 Penjelasan confusion matrix:
 
 TN (True Negative): Jumlah sampel yang benar-benar negatif dan telah diprediksi dengan benar sebagai negatif = 1
