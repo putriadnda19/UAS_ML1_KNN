@@ -5,7 +5,7 @@
 
 ## Domain Proyek
 
-Kanker paru-paru adalah suatu kondisi di mana sel-sel tumbuh secara tidak terkendali di dalam organ paru-paru. Organ ini berfungsi untuk menyebarkan oksigen ke dalam darah saat menghirup napas dan membuang karbondioksida saat menghela napas. Kanker paru terdiri dari dua jenis, yaitu kanker paru primer, kanker paru sekunder. Estimasi harga apartment ini boleh digunakan sebagai patokan bagi semua orang yang ingin mengecek apakah terkena kanker paru-paru atau tidak.
+Kanker paru-paru adalah suatu kondisi di mana sel-sel tumbuh secara tidak terkendali di dalam organ paru-paru. Organ ini berfungsi untuk menyebarkan oksigen ke dalam darah saat menghirup napas dan membuang karbondioksida saat menghela napas. Kanker paru terdiri dari dua jenis, yaitu kanker paru primer, kanker paru sekunder. Estimasi Pasien Yang Menderita Kanker Paru-Paru ini boleh digunakan sebagai patokan bagi semua orang yang ingin mengecek apakah terkena kanker paru-paru atau tidak.
 
 ## Business Understanding
 
