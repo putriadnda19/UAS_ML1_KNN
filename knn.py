@@ -5,7 +5,7 @@ model = pickle.load(open('knn-paru-paru.sav', 'rb'))
 
 st.title('Estimasi Pasien Yang Menderita Kanker Paru-Paru')
 
-st.write('***Kita hanya menginput 1 dan 2. 1=NO & 2=YES***')
+st.write('***Selain input umur pasien kita hanya menginput 1 dan 2. 1=NO & 2=YES***')
 col1, col2 = st.columns(2)
 
 with col1 :
