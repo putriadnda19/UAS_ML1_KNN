@@ -12,7 +12,9 @@ with col1 :
     AGE = st.slider('Input umur pasien', 1, 80)
 
 with col2 :
-    SMOKING = st.number_input('Apakah pasien merokok?')
+    SMOKING = st.radio(
+    "Apakah pasien merokok?",
+    ["YES", "NO"])
 
 with col1 :
     YELLOW_FINGERS = st.number_input('Apakah pasien jari pasien kuning?')
