@@ -38,7 +38,7 @@ with col2 :
     CHRONIC_DISEASE = st.number_input('Apakah pasien mempunyai penyakit kronis?')
 
 with col1 :
-WHEEZING = st.number_input('Apakah pasien mengi (Napas Berbunyi)?')
+    WHEEZING = st.number_input('Apakah pasien mengi (Napas Berbunyi)?')
 
 predict = ''
 
