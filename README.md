@@ -259,4 +259,3 @@ TP (True Positive): Jumlah sampel yang benar-benar positif dan telah diprediksi 
 
 ## Deployment
 
-[Estimasi Protein Menu McDonald](https://app-estimasi-protein-giutfqlbvjevjdp2ux6bnw.streamlit.app/). 
