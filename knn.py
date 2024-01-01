@@ -1,7 +1,7 @@
 import pickle 
 import streamlit as st 
 
-model = pickle.load(open('knn-paru-paru.sav', 'rb'))
+model = pickle.dump(knn_model, open('knn-paru-paru.sav', 'wb'))
 
 st.title('Estimasi Pasien Yang Menderita Kanker Paru-Paru')
 
