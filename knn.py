@@ -47,4 +47,4 @@ if st.button('Estimasi ', type="primary"):
     predict = model.predict(
         [[AGE, SMOKING, YELLOW_FINGERS, ANXIETY, PEER_PRESSURE, COUGHING, SHORTNESS_OF_BREATH, SWALLOWING_DIFFICULTY, CHEST_PAIN, CHRONIC_DISEASE, WHEEZING]]
     )
-    st.success('Apakah orang-orang dengan karakteristik tersebut memiliki kanker paru-paru atau tidak? : ', predict)
+    st.write('Apakah orang-orang dengan karakteristik tersebut memiliki kanker paru-paru atau tidak? : ', predict)
