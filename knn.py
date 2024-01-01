@@ -16,16 +16,24 @@ with col2 :
     ["1", "2"])
 
 with col1 :
-    YELLOW_FINGERS = st.number_input('Apakah pasien jari pasien kuning?')
+    YELLOW_FINGERS = st.radio(
+    "Apakah pasien jari pasien kuning?",
+    ["1", "2"])
 
 with col2 :
-    ANXIETY = st.number_input('Apakah pasien mempunyai kecemasan berlebih?')
+    ANXIETY = st.radio(
+    "Apakah pasien mempunyai kecemasan berlebih?",
+    ["1", "2"])
 
 with col1 :
-    PEER_PRESSURE = st.number_input('Apakah pasien mempunyai tekanan dari teman sebaya?')
+    PEER_PRESSURE = st.radio(
+    "Apakah pasien mempunyai tekanan dari teman sebaya?",
+    ["1", "2"])
 
 with col2 :
-    COUGHING = st.number_input('Apakah pasien batuk-batuk?')
+    COUGHING = st.radio(
+    "Apakah pasien batuk-batuk?",
+    ["1", "2"])
 
 with col1 :
     SHORTNESS_OF_BREATH = st.number_input('Apakah pasien sesak nafas?')
