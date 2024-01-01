@@ -1,49 +1,49 @@
-import pickle 
-import streamlit as st 
+# app.py
 
-model = pickle.load(open('knn-paru-paru.sav', 'rb'))
+import streamlit as st
+import pandas as pd
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import accuracy_score
 
-st.title('Estimasi Pasien Yang Menderita Kanker Paru-Paru')
+# Fungsi untuk melatih model KNN
+def train_knn_model(X_train, y_train, n_neighbors=3):
+    model = KNeighborsClassifier(n_neighbors=n_neighbors)
+    model.fit(X_train, y_train)
+    return model
 
-col1, col2 = st.columns(2)
+# Fungsi untuk mengevaluasi model
+def evaluate_model(model, X_test, y_test):
+    y_pred = model.predict(X_test)
+    accuracy = accuracy_score(y_test, y_pred)
+    return accuracy
 
-with col1 :
-    AGE = st.number_input('Input umur pasien')
+def main():
+    st.title("Aplikasi KNN dengan Streamlit")
 
-with col2 :
-    SMOKING = st.number_input('Apakah pasien merokok?')
+    # Tambahkan elemen-elemen UI
+    st.sidebar.header("Pengaturan Model")
+    k_value = st.sidebar.slider("Jumlah Tetangga (k)", 1, 10, 3)
 
-with col1 :
-    YELLOW_FINGERS = st.number_input('Apakah pasien jari pasien kuning?')
+    # Muat dataset (ganti dengan dataset Anda)
+    # Misalnya, Anda dapat menggunakan dataset iris untuk contoh
+    from sklearn.datasets import load_iris
+    iris = load_iris()
+    X = pd.DataFrame(iris.data, columns=iris.feature_names)
+    y = iris.target
 
-with col2:
-    ANXIETY = st.number_input('Apakah pasien mempunyai kecemasan berlebih?')
+    # Pisahkan data menjadi data pelatihan dan pengujian
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
-with col1 :
-    PEER_PRESSURE = st.number_input('Apakah pasien mempunyai tekanan dari teman sebaya?')
+    # Latih model
+    model = train_knn_model(X_train, y_train, n_neighbors=k_value)
 
-with col2 :
-    COUGHING = st.number_input('Apakah pasien batuk-batuk?')
+    # Evaluasi model
+    accuracy = evaluate_model(model, X_test, y_test)
 
-with col1 :
-    SHORTNESS_OF_BREATH = st.number_input('Apakah pasien sesak nafas?')
+    # Tampilkan hasil evaluasi
+    st.sidebar.subheader("Hasil Evaluasi Model")
+    st.sidebar.write(f"Akurasi: {accuracy:.2%}")
 
-with col2 :
-    SWALLOWING_DIFFICULTY = st.number_input('Apakah pasien kesulitan menelan?')
-
-with col1 :
-    CHEST_PAIN = st.number_input('Apakah pasien nyeri dada?')
-
-with col2 :
-    CHRONIC_DISEASE = st.number_input('Apakah pasien mempunyai penyakit kronis?')
-
-with col1 :
-    WHEEZING = st.number_input('Apakah pasien mengi (Napas Berbunyi)?')
-
-predict = ''
-
-if st.button('Estimasi ', type="primary"):
-    predict = model.predict(
-        [[AGE, SMOKING, YELLOW_FINGERS, ANXIETY, PEER_PRESSURE, COUGHING, SHORTNESS_OF_BREATH, SWALLOWING_DIFFICULTY, CHEST_PAIN, CHRONIC_DISEASE, WHEEZING]]
-    )
-    st.write('Apakah orang-orang dengan karakteristik tersebut memiliki kanker paru-paru atau tidak? : ', predict)
+if __name__ == "__main__":
+    main()
