@@ -11,29 +11,19 @@ with col1 :
     AGE = st.slider('Input umur pasien', 1, 80)
 
 with col2 :
-    SMOKING = st.radio(
-    "Apakah pasien merokok?",
-    ["1", "2"])
+    SMOKING = st.number_input('Apakah pasien merokok?')
 
 with col1 :
-    YELLOW_FINGERS = st.radio(
-    "Apakah pasien jari pasien kuning?",
-    ["1", "2"])
+    YELLOW_FINGERS = st.number_input('Apakah pasien jari pasien kuning?')
 
 with col2 :
-    ANXIETY = st.radio(
-    "Apakah pasien mempunyai kecemasan berlebih?",
-    ["1", "2"])
+    ANXIETY = st.number_input('Apakah pasien mempunyai kecemasan berlebih?')
 
 with col1 :
-    PEER_PRESSURE = st.radio(
-    "Apakah pasien mempunyai tekanan dari teman sebaya?",
-    ["1", "2"])
+    PEER_PRESSURE = st.number_input('Apakah pasien mempunyai tekanan dari teman sebaya?')
 
 with col2 :
-    COUGHING = st.radio(
-    "Apakah pasien batuk-batuk?",
-    ["1", "2"])
+    COUGHING = st.number_input('Apakah pasien batuk-batuk?')
 
 with col1 :
     SHORTNESS_OF_BREATH = st.number_input('Apakah pasien sesak nafas?')
