@@ -249,6 +249,12 @@ plt.ylabel('Actual')
 plt.show()
 ```
 ![Alt text](output7.png)
+Penjelasan confusion matrix:
+
+TN (True Negative): Jumlah sampel yang benar-benar negatif dan telah diprediksi dengan benar sebagai negatif = 1
+FP (False Positive): Jumlah sampel yang sebenarnya negatif tetapi telah salah diprediksi sebagai positif = 1
+FN (False Negative): Jumlah sampel yang sebenarnya positif tetapi telah salah diprediksi sebagai negatif = 3
+TP (True Positive): Jumlah sampel yang benar-benar positif dan telah diprediksi dengan benar sebagai positif = 57
 
 ## Deployment
 
