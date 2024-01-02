@@ -50,13 +50,3 @@ if st.button('Estimasi ', type="primary"):
         [[AGE, SMOKING, YELLOW_FINGERS, ANXIETY, PEER_PRESSURE, COUGHING, SHORTNESS_OF_BREATH, SWALLOWING_DIFFICULTY, CHEST_PAIN, CHRONIC_DISEASE, WHEEZING]]
     )
     st.write('Apakah orang-orang dengan karakteristik tersebut memiliki kanker paru-paru atau tidak? : ', predict)
-
-if st.button('Plot Confusion Matrix'):
-cm = confusion_matrix(y_test, y_pred)
-
-plt.figure(figsize=(6, 6))
-sns.heatmap(cm, annot=True, fmt="d", cmap="Blues", xticklabels=dtc.classes_, yticklabels=dtc.classes_)
-plt.title('Confusion Matrix')
-plt.xlabel('Prediksi')
-plt.ylabel('Aktual')
-plt.show()
