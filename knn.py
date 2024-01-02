@@ -1,6 +1,5 @@
 import pickle 
 import streamlit as st 
-import seaborn as sns
 import matplotlib.pyplot as plt
 
 knn_model = pickle.load(open('knn-paru-paru.sav', 'rb'))
@@ -54,7 +53,6 @@ if st.button('Estimasi ', type="primary"):
 if st.button('Plot Confusion Matrix'):
     # Visualize the Decision Tree using matplotlib
     plt.figure(figsize=(8, 6))
-    seaborn.heatmap(cm, annot=True, fmt='d', cmap='Blues', annot_kws={"size": 16}, cbar=False)
     plt.title('Confusion Matrix')
     plt.xlabel('Predicted')
     plt.ylabel('Actual')
