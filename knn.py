@@ -52,7 +52,7 @@ if st.button('Estimasi ', type="primary"):
     st.write('Apakah orang-orang dengan karakteristik tersebut memiliki kanker paru-paru atau tidak? : ', predict)
 
 if st.button('Plot Confusion Matrix'):
-confusion_mat = confusion_matrix(y_test, y_pred)
+cm = confusion_matrix(y_test, y_pred)
 
 plt.figure(figsize=(6, 6))
 sns.heatmap(cm, annot=True, fmt="d", cmap="Blues", xticklabels=dtc.classes_, yticklabels=dtc.classes_)
