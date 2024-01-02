@@ -55,7 +55,7 @@ if st.button('Plot Confusion Matrix'):
 confusion_mat = confusion_matrix(y_test, y_pred)
 
 plt.figure(figsize=(6, 6))
-sns.heatmap(confusion_mat, annot=True, fmt="d", cmap="Blues", xticklabels=dtc.classes_, yticklabels=dtc.classes_)
+sns.heatmap(cm, annot=True, fmt="d", cmap="Blues", xticklabels=dtc.classes_, yticklabels=dtc.classes_)
 plt.title('Confusion Matrix')
 plt.xlabel('Prediksi')
 plt.ylabel('Aktual')
