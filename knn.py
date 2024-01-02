@@ -1,7 +1,6 @@
 import pickle 
 import streamlit as st 
 import matplotlib.pyplot as plt
-import seaborn as sns
 
 knn_model = pickle.load(open('knn-paru-paru.sav', 'rb'))
 
