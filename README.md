@@ -259,3 +259,6 @@ TP (True Positive): Jumlah sampel yang benar-benar positif dan telah diprediksi 
 
 ## Deployment
 
+[Estimasi Pasien Yang Menderita Kanker Paru-Paru](https://uas-ml1-knn-putriadinda.streamlit.app/)https://uas-ml1-knn-putriadinda.streamlit.app/).
+![Alt text](tampilanstreamlit.png)
+
