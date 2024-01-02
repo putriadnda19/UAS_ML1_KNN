@@ -57,4 +57,5 @@ if st.button('Plot Confusion Matrix'):
     plt.xlabel('Predicted')
     plt.ylabel('Actual')
     plt.show()
+    st.set_option('deprecation.showPyplotGlobalUse', False)
     st.pyplot()
