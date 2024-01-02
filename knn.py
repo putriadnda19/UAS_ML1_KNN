@@ -52,7 +52,10 @@ if st.button('Estimasi ', type="primary"):
 
 if st.button('Plot Confusion Matrix'):
     # Visualize the Decision Tree using matplotlib
-    model, score = train_model(X, y)
-    plt.figure(figsize=(10,6))
-    plot_confusion_matrix(model, X, y, values_format='d')
+    plt.figure(figsize=(8, 6))
+    sns.heatmap(cm, annot=True, fmt='d', cmap='Blues', annot_kws={"size": 16}, cbar=False)
+    plt.title('Confusion Matrix')
+    plt.xlabel('Predicted')
+    plt.ylabel('Actual')
+    plt.show()
     st.pyplot()
