@@ -32,7 +32,7 @@ Dataset yang saya gunakan berasal dari Kaggle. Dataset ini mengandung 309 baris 
 [LUNG CANCER](https://www.kaggle.com/datasets/mysarahmadbhat/lung-cancer).
 
 
-### Variabel-variabel pada Nutrition Facts for McDonald's Menu adalah sebagai berikut:
+### Variabel-variabel pada Dataset Lungcancer adalah sebagai berikut:
 - GENDER      : Jenis Kelamin. [Tipe data: Object, Contoh: Male, Female]
 - AGE          : Usia. [Tipe data: Integer, Contoh: 69, 74]
 - SMOKING      : Merokok. [Tipe data: Integer, Contoh: YES=2, NO=1]
